@@ -1,0 +1,49 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.jumbotron {
+  background-color: #cccccc;
+  color: #333333;
+  padding: 8px 16px;
+  margin: 8px 0px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 8px 16px;
+  margin: 4px;
+  border: 2px solid grey;
+  background-color: transparent;
+  color: grey;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+ul.list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.list li {
+  padding: 12px 8px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin: 5px 0px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
