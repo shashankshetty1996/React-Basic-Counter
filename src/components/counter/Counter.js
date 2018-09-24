@@ -8,7 +8,8 @@ export default class Counter extends Component {
   state = {
     counter: 0,
     changeBy: 5,
-    counterList: []
+    counterList: [],
+    input: ''
   };
 
   updateList = () => {
@@ -82,6 +83,12 @@ export default class Counter extends Component {
     });
   };
 
+  onChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
   render() {
     return (
       <Fragment>
@@ -98,6 +105,9 @@ export default class Counter extends Component {
           list={this.state.counterList}
           updateList={this.updateList}
           removeList={this.removeList}
+          inputName="input"
+          inputValue={this.state.input}
+          onChange={this.onChange}
         />
       </Fragment>
     );

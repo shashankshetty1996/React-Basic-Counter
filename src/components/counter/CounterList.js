@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../layout/Button';
+import InputFields from '../layout/Input';
 
 const CounterList = props => {
   let ul = (
@@ -30,6 +31,13 @@ const CounterList = props => {
       <Button className="btn-block" click={props.updateList}>
         Save
       </Button>
+      <InputFields
+        type="text"
+        placeholder="Enter Your name"
+        name={props.inputName}
+        value={props.inputValue}
+        onChange={props.onChange}
+      />
       {renderMe}
     </div>
   );
