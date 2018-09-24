@@ -28,16 +28,16 @@ const CounterList = props => {
     );
   return (
     <div>
-      <Button className="btn-block" click={props.updateList}>
-        Save
-      </Button>
       <InputFields
         type="text"
-        placeholder="Enter Your name"
+        placeholder="Enter Your Name here..."
         name={props.inputName}
         value={props.inputValue}
         onChange={props.onChange}
       />
+      <Button className="btn-block" click={props.updateList}>
+        Save
+      </Button>
       {renderMe}
     </div>
   );

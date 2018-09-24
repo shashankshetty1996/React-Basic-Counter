@@ -5,6 +5,7 @@ body {
 
 .container {
   width: 90%;
+  max-width: 750px;
   margin: auto;
 }
 
@@ -46,4 +47,15 @@ ul.list li {
   margin: 5px 0px;
   text-transform: capitalize;
   cursor: pointer;
+}
+
+input {
+  margin: 16px 0px;
+  padding: 8px 4px;
+  width: 100%;
+  font-size: 18px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
 }
