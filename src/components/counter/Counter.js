@@ -15,8 +15,12 @@ export default class Counter extends Component {
   updateList = () => {
     // Get the counter List
     let updList = [...this.state.counterList];
-    // Prepare item {id: 'length of the counter', counter: 'value of counter in the state'}
-    let item = { id: uuid(), counter: this.state.counter };
+    // Prepare item {id: 'Unique ID', counter: 'value of counter in the state', username: value from input state}
+    let item = {
+      id: uuid(),
+      counter: this.state.counter,
+      username: this.state.input
+    };
 
     // Add the element to list
     updList.push(item);

@@ -13,7 +13,7 @@ const CounterList = props => {
               props.removeList(item.id);
             }}
           >
-            {item.counter}
+            {item.username} {item.counter}
           </li>
         );
       })}

@@ -4,9 +4,25 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   max-width: 750px;
   margin: auto;
+}
+
+.navbar a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0px 20px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .jumbotron {
