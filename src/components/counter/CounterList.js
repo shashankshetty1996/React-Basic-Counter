@@ -20,7 +20,11 @@ const CounterList = props => {
   );
 
   const renderMe =
-    props.list.length !== 0 ? ul : <h1 style={{ textAlign: 'center' }} />;
+    props.list.length !== 0 ? (
+      ul
+    ) : (
+      <h1 style={{ textAlign: 'center' }}>Add element to list</h1>
+    );
   return (
     <div>
       <Button className="btn-block" click={props.updateList}>
