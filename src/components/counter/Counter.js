@@ -58,7 +58,7 @@ export default class Counter extends Component {
     this.setState(prevState => {
       return {
         ...prevState.state,
-        counter: prevState.counter + 1
+        counter: prevState.counter - 1
       };
     });
   };

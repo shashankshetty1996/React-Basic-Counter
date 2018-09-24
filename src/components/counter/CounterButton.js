@@ -13,6 +13,9 @@ const CounterButton = props => {
         {/* <button className="btn" onClick={() => props.changeCounter(changeBy)}>
           Increase
         </button> */}
+        {/* <button className="btn" onClick={() => props.changeCounter(10)}>
+          Increase
+        </button> */}
         {/* <button className="btn" onClick={props.changeCounter.bind(this, 10)}>
           Increase
         </button> */}
