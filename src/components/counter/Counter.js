@@ -13,6 +13,15 @@ export default class Counter extends Component {
   };
 
   updateList = () => {
+    if (this.state.input === '') {
+      // let x = prompt('Enter your name');
+      // this.setState({
+      //   input: x
+      // });
+      alert('Enter name');
+      return;
+    }
+
     // Get the counter List
     let updList = [...this.state.counterList];
     // Prepare item {id: 'Unique ID', counter: 'value of counter in the state', username: value from input state}
@@ -28,7 +37,8 @@ export default class Counter extends Component {
     // Update the state
     this.setState({
       ...this.state,
-      counterList: updList
+      counterList: updList,
+      input: ''
     });
   };
 
