@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from 'react';
+import uuid from 'uuid';
+
 import CounterButton from './CounterButton';
 import CounterList from './CounterList';
 
@@ -13,7 +15,7 @@ export default class Counter extends Component {
     // Get the counter List
     let updList = [...this.state.counterList];
     // Prepare item {id: 'length of the counter', counter: 'value of counter in the state'}
-    let item = { id: updList.length, counter: this.state.counter };
+    let item = { id: uuid(), counter: this.state.counter };
 
     // Add the element to list
     updList.push(item);
@@ -31,6 +33,14 @@ export default class Counter extends Component {
     let updList = [...this.state.counterList];
     // By filter remove the clicked item by id
     updList = updList.filter(item => item.id !== id);
+
+    // updList = updList.filter((item) => {
+    //   if(item.id === id) {
+    //     return false
+    //   } else {
+    //     return true
+    //   }
+    // });
 
     // Update the state
     this.setState({
