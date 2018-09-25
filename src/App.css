@@ -9,20 +9,33 @@ body {
   margin: auto;
 }
 
+.navbar {
+  padding: 0px 8px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.42);
+  z-index: 5;
+}
+
 .navbar a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
   padding: 0px 20px;
-  height: 64px;
-  line-height: 64px;
-  transition: all 0.3s ease;
+  height: 56px;
+  line-height: 56px;
+  transition: all 0.3s ease-in-out;
 }
 
-.navbar a:hover,
+/* .navbar a:hover,
 .navbar a.active {
   background-color: #ffffff;
   color: #000000;
+} */
+
+.navbar a:hover,
+.navbar a.active {
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
 }
 
 .jumbotron {

@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
+  // Link,
   NavLink
 } from 'react-router-dom';
 import './App.css';
